@@ -1,0 +1,22 @@
+.colorbox {
+  height: 300px;
+  width: 300px;
+  border: solid 1px lightgray;
+  margin: 10px;
+}
+
+input {
+  margin-right: 5px;
+  flex: 1;
+}
+
+button {
+  padding: 3px;
+  flex: 1;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

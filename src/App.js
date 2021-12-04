@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React, { createContext } from "react";
+import Home from "./Component/Home";
+import Catalogs from "./Component/Catalogs";
+import Article from "./Component/Article";
+import Nav from "./Component/Nav";
+import CLogin from "./Component/Login";
+import Profile from "./Component/Profile";
+import MyContext from "./Component/context"
+import { useState } from "react";
+import { Redirect } from "react-router";
+
 
 function App() {
+  const [acct,setAcct] = useState({
+    username: "",
+    isAuth: false
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MyContext.Provider value={{ acct,setAcct }}>
+    <Router>
+      <Nav />
+      <Switch>
+        <Route exact path="/" component={CLogin} />
+      {!acct.isAuth ? <Redirect to="/" />: <> 
+        <Route path="/home" component={Home} />
+        <Route path="/catalogs" component={Catalogs} />
+        <Route path="/article/:id" component={Article} />
+        <Route path="/profile" component={Profile} />
+      </>}
+        
+      </Switch>
+    </Router>
+    </MyContext.Provider>
   );
 }
 
