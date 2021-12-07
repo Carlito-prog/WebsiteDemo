@@ -1,0 +1,53 @@
+:root {
+  --img-color: #5e5c5c;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 375px;
+}
+.hero-img {
+  background-color: var(--img-color);
+  height: 100%;
+  width: 100%;
+}
+.htxt-wrp {
+  display: flex;
+  justify-content: center;
+}
+.par-wrp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.img-wrp {
+  display: flex;
+  justify-content: space-between;
+}
+.h-img-div {
+  background-color: var(--img-color);
+  width: 25%;
+  height: 200px;
+  margin-right: 20px;
+}
+.pee-wrp,
+.card-sec {
+  margin-top: 10px;
+  display: flex;
+}
+.card1,
+.card2 {
+  display: flex;
+  flex: 1;
+}
+.info-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.card-sec .h-img-div {
+  width: 50%;
+}

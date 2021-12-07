@@ -25,7 +25,7 @@ const Nav = () => {
       </div>
       <div className="link-div">
       <div className="link-wrapper">
-      <Link to="/" className="nav-link" onClick={handleClick}> {acct.isAuth ? "Log out" : "Log In"} </Link>
+      <Link to="/" className="nav-link" onClick={handleClick}> {acct.isAuth ? "Log out" : "Log In"}</Link>
       </div>
       <div className="link-wrapper">
       <Link to="/Home" className="nav-link"> Home </Link>

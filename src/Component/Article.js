@@ -21,16 +21,17 @@ const Article = (props) => {
 
   useEffect(() => {
       fetchData();
-  },[]);
+  },[userData]);
 
   const id = props.match.params.id;
+  console.log(props.match)
   console.log(userData)
-  let post = userData.filter((charac) => charac.id == id);
+  let post = userData.filter((charac) => charac.id === Number(id));
   post = post[0]
-  
+ 
   console.log(post)
 
-  if (userData.length == 0){
+  if (userData.length === 0 ){
     return <h1> Loading... </h1>
   } else {
     return (
@@ -45,7 +46,9 @@ const Article = (props) => {
         <h3>{post.fullName}</h3>
         <h3>{post.family}</h3>
         <section> 
+          <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut temporibus nisi consequatur alias, nihil, reprehenderit iusto tempora atque ea commodi neque obcaecati vero quidem aspernatur! Rem quasi nihil maxime hic. 
+          </p>
         </section>
         <link to="/article/"/>
       </div>
