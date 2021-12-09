@@ -50,14 +50,14 @@ input {
   justify-content: center;
   margin-top: 30px;
 }
-button {
+.bnt-wrp button {
   width: 50%;
   height: 40px;
   background-color: #def399;
 }
-button:hover {
+.bnt-wrp button:hover {
   background-color: #d1d1d1e0;
 }
-button:active {
+.bnt-wrp button:active {
   background-color: #a3a2a2e0;
 }

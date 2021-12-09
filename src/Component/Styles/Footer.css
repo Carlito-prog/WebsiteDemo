@@ -1,18 +1,15 @@
 .footer-wrp {
-  height: 200px;
+  padding: 30px;
   background-color: #4d7b89;
   display: flex;
-  margin-top: 75px;
-  align-items: flex-end;
-  width: 100%;
+  justify-content: space-between;
+  margin-top: 60px;
 }
-.f-link-wrp,
-.right-wrp {
+.f-link-wrp {
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin-left: 30px;
-  padding-left: 10px;
-  justify-content: flex-start;
-  padding-bottom: 20px;
+}
+.right-wrp {
+  flex: 1;
 }

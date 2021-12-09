@@ -4,7 +4,7 @@ import Catalogs from "./Component/Catalogs";
 import Article from "./Component/Article";
 import Nav from "./Component/Nav";
 import CLogin from "./Component/Login";
-import Profile from "./Component/Profile";
+import Profile from "./Component/Profile/Profile";
 import MyContext from "./Component/context"
 import { useState } from "react";
 import { Redirect } from "react-router";

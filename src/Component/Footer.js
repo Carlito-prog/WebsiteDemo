@@ -24,7 +24,7 @@ import "./Styles/Footer.css"
            </div>
            <div className="right-wrp">
             {/* images */}
-            
+              images go here
            </div>
        </div>
     )

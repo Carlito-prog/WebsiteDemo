@@ -1,0 +1,23 @@
+.head-wrp {
+  position: relative;
+}
+.head-wrp img {
+  height: 100%;
+  width: 100%;
+}
+.btn2-wrp {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.btn2-wrp button {
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: rgb(77, 226, 233);
+}
+.btn2-wrp button:hover {
+  cursor: pointer;
+}
