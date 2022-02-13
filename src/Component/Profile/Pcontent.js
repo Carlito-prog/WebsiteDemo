@@ -5,14 +5,13 @@ import { useSelector } from 'react-redux'
 
 
 const Pcontent = () => {
+    const pRef = useRef() 
 
     const handleSubmit = (e) => {
         e.preventDefault();
         store.dispatch({type: "add", post: pRef.current.value })
         pRef.current.value = ""
     }
-
-     const pRef = useRef() 
       
      const post = useSelector((state) => state.post)
       
