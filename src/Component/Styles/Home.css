@@ -1,7 +1,9 @@
 :root {
   --img-color: #5e5c5c;
 }
-
+.page-wrp {
+  padding: 0 2%;
+}
 .hero {
   display: flex;
   justify-content: center;

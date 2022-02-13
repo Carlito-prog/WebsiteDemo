@@ -24,7 +24,7 @@ const Catalogs = () => {
   },[]);
 
   return (
-    <>
+    <div className="page-wrp">
       <div className="title">
         <h1> Catalogs of Characters </h1>
       </div>
@@ -46,7 +46,7 @@ const Catalogs = () => {
         })}
         </section>
       </div>
-    </>
+    </div>
   );
     }
 

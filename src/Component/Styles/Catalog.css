@@ -1,3 +1,6 @@
+.page-wrp {
+  padding: 0 2%;
+}
 .character-container {
   display: flex;
   flex-direction: column;

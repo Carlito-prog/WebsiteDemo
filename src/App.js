@@ -1,10 +1,11 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Component/Home";
 import Catalogs from "./Component/Catalogs";
 import Article from "./Component/Article";
 import Nav from "./Component/Nav";
 import CLogin from "./Component/Login";
 import Profile from "./Component/Profile/Profile";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import MyContext from "./Component/context"
 import { useState } from "react";
 import { Redirect } from "react-router";
@@ -23,7 +24,7 @@ function App(props) {
       <Switch>
         <Route exact path="/" component={CLogin} />
       {!acct.isAuth ? <Redirect to="/" />: <> 
-        <Route path="/home" render={() => <Home card1Name="Carlito Gatz" card2Name="Austin Powers"   card1Title="Web Dev" card2Title="Using Props"/>}/>
+        <Route path="/home" render={() => <Home card1Name="Carlito Gatz" card2Name="Austin Powers" card1Title="Web Dev" card2Title="Using Props"/>}/>
         <Route path="/catalogs" component={Catalogs} />
         <Route path="/article/:id" component={Article} />
         <Route path="/profile" component={Profile} />

@@ -14,9 +14,9 @@ const Home = (props) => {
 useEffect(()=>{
 
 })
-  return <>  
+  return <div className="page-wrp">  
   <h1 className="home-text"> Home </h1> 
-    <main className="page-wrp">
+    <main className="main-wrp">
          <section className="hero">
          <div className="hero-img"> </div>
         </section>
@@ -61,7 +61,7 @@ useEffect(()=>{
       </section>
   </main>
 
-  </>
+  </div>
 
   
 };

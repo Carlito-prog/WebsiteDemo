@@ -1,4 +1,5 @@
 import { useState,useEffect } from "react";
+import { ReactPropTypes } from "react";
 
 
 
@@ -48,6 +49,7 @@ const Article = (props) => {
         <section> 
           <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut temporibus nisi consequatur alias, nihil, reprehenderit iusto tempora atque ea commodi neque obcaecati vero quidem aspernatur! Rem quasi nihil maxime hic. 
+          
           </p>
         </section>
         <link to="/article/"/>

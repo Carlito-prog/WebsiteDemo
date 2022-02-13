@@ -20,3 +20,9 @@ button {
   justify-content: center;
   align-items: center;
 }
+.input-wrp {
+  max-height: 700px;
+}
+input {
+  height: 100%;
+}
