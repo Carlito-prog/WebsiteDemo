@@ -33,6 +33,11 @@ const CLogin = (props) => {
     {acct.isAuth ? <Redirect to="/home" />: <> </>}
       <h1 className="login-text"> Login </h1>
       <section className="login-section">
+        <div>
+          <h5>
+            OPEN USERNAME AND PASSWORD FOR ACCESS
+          </h5>
+        </div>
       <div className="form-wrapper">
         <form onSubmit={handleSubmit} className="form">
           <div className="label-wrapper">
