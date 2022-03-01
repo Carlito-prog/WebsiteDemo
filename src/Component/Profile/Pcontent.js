@@ -36,6 +36,7 @@ const Pcontent = () => {
            </section>
            <section>
                     {post.map( (sPost) => {
+                        return (
                     <>
                         <div key={sPost.id} className='SinglePost'>
                             {sPost.post}
@@ -44,7 +45,7 @@ const Pcontent = () => {
                             <span className='likes'>  </span>
                             {sPost.timeStamp}
                         </div>
-                    </>
+                    </>)
                     })}
            </section>
        </main>
