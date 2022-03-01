@@ -35,7 +35,7 @@ const CLogin = (props) => {
       <section className="login-section">
         <div>
           <h5>
-            OPEN USERNAME AND PASSWORD FOR ACCESS
+            OPEN USERNAME AND PASSWORD 3 Characters FOR ACCESS 
           </h5>
         </div>
       <div className="form-wrapper">
