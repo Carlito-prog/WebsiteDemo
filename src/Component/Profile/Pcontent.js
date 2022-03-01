@@ -34,20 +34,19 @@ const Pcontent = () => {
            <section className='display-post'>
 
            </section>
-           <section>
-                    {post.map( (sPost) => {
-                        return (
-                    <>
-                        <div key={sPost.id} className='SinglePost'>
-                            {sPost.post}
-                        </div>
-                        <div>
-                            <span className='likes'>  </span>
-                            {sPost.timeStamp}
-                        </div>
-                    </>)
-                    })}
-           </section>
+//            <section>
+//                     {post.map( (sPost) => {
+//                       <>
+//                         <div key={sPost.id} className='SinglePost'>
+//                             {sPost.post}
+//                         </div>
+//                         <div>
+//                             <span className='likes'>  </span>
+//                             {sPost.timeStamp}
+//                         </div>
+//                     </>
+//                     })}
+//            </section>
        </main>
     )
 }
