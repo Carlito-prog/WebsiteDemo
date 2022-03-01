@@ -22,7 +22,7 @@ const Profile = () => {
                 <ProfileCard username={acct.userName}/>
             </div>
             <div className='pcont-wrp'>
-                <Pcontent/>
+//                 <Pcontent/>
             </div>
         </Provider>
         </div>
