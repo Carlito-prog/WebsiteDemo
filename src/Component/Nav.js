@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import "./Styles/Nav.css"
-import MyContext from "./context";
+import MyContext from "../context";
 
 
 

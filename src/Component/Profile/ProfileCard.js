@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux'
 
 const ProfileCard = (props) => {
 
-
+// dispatch of the state
 const handleAdd = (e) => {
     store.dispatch({frtype: "increment"})
 
