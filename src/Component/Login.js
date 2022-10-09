@@ -33,7 +33,9 @@ const CLogin = (props) => {
       <h1 className="login-text"> Login </h1>
       <section className="login-section">
         <div>
-          <h5>OPEN USERNAME AND PASSWORD FOR ACCESS</h5>
+          <h5>
+            OPEN USERNAME AND PASSWORD Enter 3 Characters FOR ACCESS 
+          </h5>
         </div>
         <div className="form-wrapper">
           <form onSubmit={handleSubmit} className="form">
